@@ -1,14 +1,15 @@
 {
-  "name": "@mutaserv/transpile",
+  "name": "mutaserv-formater",
   "version": "0.0.0",
-  "description": "Transpiles ES6 mutations to one specificly used by mutaserv",
+  "description": "Format ES6 mutations to one specificly used by mutaserv",
   "scripts": {
-    "test": "exit 0"
+    "test": "exit 0",
+    "release": "npm t && git commit -am $npm_package_version && git tag $npm_package_version && git push && git push --tags && npm publish"
   },
   "author": "krzepah <patrick@krzepah.net>",
   "license": "MIT",
   "bin": {
-    "mutatranspile": "./index.js"
+    "mutaserv-format": "./index.js"
   },
   "eslintConfig": {
     "extends": "eslint-config-developit",
