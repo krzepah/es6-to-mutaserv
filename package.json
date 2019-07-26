@@ -1,0 +1,28 @@
+{
+  "name": "@mutaserv/transpile",
+  "version": "0.0.0",
+  "description": "Transpiles ES6 mutations to one specificly used by mutaserv",
+  "scripts": {
+    "test": "exit 0"
+  },
+  "author": "krzepah <patrick@krzepah.net>",
+  "license": "MIT",
+  "bin": {
+    "mutatranspile": "./index.js"
+  },
+  "eslintConfig": {
+    "extends": "eslint-config-developit",
+    "rules": {
+      "prefer-rest-params": 0
+    }
+  },
+  "devDependencies": {
+    "eslint": "^6.1.0",
+    "eslint-config-developit": "^1.1.1"
+  },
+  "dependencies": {
+    "@babel/parser": "^7.5.5",
+    "@babel/generator": "^7.5.5",
+    "ramda": "^0.26.1"
+  }
+}
